@@ -23,4 +23,10 @@ const userSchema = new Schema({
   },
 });
 
+userSchema.methods = {
+  authenticate: function (plainPassword) {
+    return this.password === plainPassword;
+  },
+};
+
 module.exports = mongoose.model("User", userSchema);
