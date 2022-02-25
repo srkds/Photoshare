@@ -16,7 +16,7 @@ A web app where users can share their photos publicaly and private with the worl
 
     - [x] signup
     - [x] signin
-    - [ ] signout
+    - [x] signout
 
   - [ ] user routes
 

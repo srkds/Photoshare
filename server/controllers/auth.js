@@ -51,3 +51,8 @@ exports.signin = (req, res) => {
     });
   });
 };
+
+exports.signout = (req, res) => {
+  res.clearCookie("token"); // clear cookie
+  res.send("User successfuly signout."); // send success message
+};
