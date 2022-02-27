@@ -1,5 +1,6 @@
 const User = require("../models/user");
 var jwt = require("jsonwebtoken");
+let expressJWT = require("express-jwt");
 
 /* SIGNUP */
 exports.signup = (req, res) => {
@@ -56,3 +57,8 @@ exports.signout = (req, res) => {
   res.clearCookie("token"); // clear cookie
   res.send("User successfuly signout."); // send success message
 };
+
+exports.isSignedIn = expressJWT({
+  secret: process.env.SECRET,
+  userProperty: "auth",
+});
