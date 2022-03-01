@@ -12,13 +12,13 @@ A web app where users can share their photos publicaly and private with the worl
 
 - [ ] Backend
 
-  - [ ] auth routes
+  - [x] auth routes
 
     - [x] signup
     - [x] signin
     - [x] signout
-    - [ ] isSignedIn
-    - [ ] isAuthenticated
+    - [x] isSignedIn
+    - [x] isAuthenticated
 
   - [ ] user routes
 
